@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="container-fluid flex-grow-1 container-p-y">
+    <div class="row">
+        <h4 class="font-weight-bold py-3 mb-4">
+            Departamentos
+        </h4>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">#</th>
+                        <th class="text-center">Nombre</th>
+                        <th class="text-center">Descripcion</th>
+                        <th class="text-center">Fecha de Alta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (this.ViewBag.Data.Count > 0)
+                    {
+                        @foreach (var record in this.ViewBag.Data)
+                        {
+                            <tr>
+                                <th class="text-center" scope="row">@record.Id</th>
+                                <td class="text-center">@record.Nombre</td>
+                                <td class="text-center">@record.Descripcion</td>
+                                <td class="text-center">@record.FechaCreacion</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <th class="text-center" colspan="4" scope="row">No se encontraro registros</th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33717.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RinkuApp", "RinkuApp.csproj", "{03780294-8A49-4BF4-982A-AB4313210AEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Domain\Domain.csproj", "{5BFB1A2A-ADAE-46B1-8260-88BA9A34C777}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{CB2C6C56-1B98-43D4-A2FF-D87DB310BF2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03780294-8A49-4BF4-982A-AB4313210AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03780294-8A49-4BF4-982A-AB4313210AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03780294-8A49-4BF4-982A-AB4313210AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03780294-8A49-4BF4-982A-AB4313210AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFB1A2A-ADAE-46B1-8260-88BA9A34C777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFB1A2A-ADAE-46B1-8260-88BA9A34C777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFB1A2A-ADAE-46B1-8260-88BA9A34C777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFB1A2A-ADAE-46B1-8260-88BA9A34C777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2C6C56-1B98-43D4-A2FF-D87DB310BF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2C6C56-1B98-43D4-A2FF-D87DB310BF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2C6C56-1B98-43D4-A2FF-D87DB310BF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2C6C56-1B98-43D4-A2FF-D87DB310BF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63D240D5-7B99-400A-B786-3994A1D77550}
+	EndGlobalSection
+EndGlobal
