@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">Rol</th>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Entregas</th>
+            <th class="text-center">Mes</th>
+            <th class="text-center">Salario Base Mensual</th>
+            <th class="text-center">Salario por Entregas</th>
+            <th class="text-center">Bono por Rol</th>
+            <th class="text-center">Total</th>
+            <th class="text-center">ISR</th>
+            <th class="text-center">Vales de Despensa</th>
+            @*<th class="text-center">Acciones</th>*@
+        </tr>
+    </thead>
+    <tbody>
+        @if (this.ViewBag.Data.Count > 0)
+        {
+            @foreach (var record in this.ViewBag.Data)
+            {
+                <tr>
+                    <td class="text-center">@record.NombreRol</td>
+                    <td class="text-center">@record.Nombre</td>
+                    <td class="text-center">@record.Entregas</td>
+                    <td class="text-center">@record.Mes</td>
+                    <td class="text-center">$@record.SalarioBaseMensual</td>
+                    <td class="text-center">$@record.SalarioXEntrega</td>
+                    <td class="text-center">$@record.BonoXRol</td>
+                    <td class="text-center">$@record.TotalBurto</td>
+                    <td class="text-center">$@record.ISR</td>
+                    <td class="text-center">$@record.ValesDespensa</td>
+                    @*<td class="text-center"><a data-target="#modals-invoice" data-toggle="modal" href="#" onclick="ConsultarDetalle(@record.IdEmpleado, '@record.Mes');">ver</a></td>*@
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <th colspan="3" scope="row">No se encontraro registros</th>
+            </tr>
+        }
+    </tbody>
+</table>
